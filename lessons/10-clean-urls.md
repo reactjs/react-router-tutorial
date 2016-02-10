@@ -40,7 +40,7 @@ because your app, in the browser, is manipulating the url. Our current
 server doesn't know how to handle the URL.
 
 The Webpack Dev Server has an option to enable this. Open up
-`package.json` and add `--history-fallback-api`.
+`package.json` and add `--history-api-fallback`.
 
 ```json
     "start": "webpack-dev-server --inline --content-base . --history-api-fallback"
