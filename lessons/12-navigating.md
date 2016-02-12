@@ -4,7 +4,7 @@ While most navigation happens with `Link`, you can programatically
 navigate around an application in response to form submissions, button
 clicks, etc.
 
-Let's make a little form in `Repos` that progromatically navigates.
+Let's make a little form in `Repos` that programatically navigates.
 
 ```js
 // modules/Repos.js
