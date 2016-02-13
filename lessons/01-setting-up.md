@@ -12,6 +12,7 @@ up our project.
 git clone <tutorial url>
 cd react-router-tutorial
 git checkout start
+npm install
 npm start
 ```
 
