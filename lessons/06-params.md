@@ -45,9 +45,11 @@ Now open up `index.js` and add the new route.
 // ...
 // import Repo
 import Repo from './modules/Repo'
+// update imports
+import { Router, Route, hashHistory, IndexRoute, Home } from 'react-router'
 
 render((
-  <Router>
+  <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/repos" component={Repos}/>
