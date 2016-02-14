@@ -3,7 +3,7 @@
 Consider the following urls:
 
 ```
-/repos/rackt/react-router
+/repos/reactjs/react-router
 /repos/facebook/react
 ```
 
@@ -49,7 +49,6 @@ import Repo from './modules/Repo'
 render((
   <Router>
     <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
       <Route path="/repos" component={Repos}/>
       {/* add the new route */}
       <Route path="/repos/:userName/:repoName" component={Repo}/>
@@ -73,7 +72,7 @@ export default React.createClass({
 
         {/* add some links */}
         <ul>
-          <li><Link to="/repos/rackt/react-router">React Router</Link></li>
+          <li><Link to="/repos/reactjs/react-router">React Router</Link></li>
           <li><Link to="/repos/facebook/react">React</Link></li>
         </ul>
 

@@ -25,7 +25,7 @@ First, nest the `Repo` route under the `Repos` route. Then go render
 <div>
   <h2>Repos</h2>
   <ul>
-    <li><Link to="/repos/rackt/react-router">React Router</Link></li>
+    <li><Link to="/repos/reactjs/react-router">React Router</Link></li>
     <li><Link to="/repos/facebook/react">React</Link></li>
   </ul>
   {/* will render `Repo.js` when at /repos/:userName/:repoName */}
@@ -44,7 +44,7 @@ class name to these links:
 import NavLink from './NavLink'
 
 // ...
-<li><NavLink to="/repos/rackt/react-router">React Router</NavLink></li>
+<li><NavLink to="/repos/reactjs/react-router">React Router</NavLink></li>
 // ...
 ```
 
