@@ -7,6 +7,8 @@ Lets add a link to `/` and see what happens:
 
 ```js
 // in App.js
+// modify the react-router import
+import { Link, IndexLink } from 'react-router'
 // ...
 <li><NavLink to="/">Home</NavLink></li>
 // ...
