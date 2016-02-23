@@ -8,6 +8,7 @@ Lets create some navigation in our `App` component.
 
 ```js
 // modules/App.js
+import React from 'react'
 import { Link } from 'react-router'
 
 export default React.createClass({
