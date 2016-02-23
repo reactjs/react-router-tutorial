@@ -42,6 +42,7 @@ export default React.createClass({
 Now open up `index.js` and add the new route.
 
 ```js
+// index.js
 // ...
 // import Repo
 import Repo from './modules/Repo'
@@ -49,7 +50,6 @@ import Repo from './modules/Repo'
 render((
   <Router>
     <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
       <Route path="/repos" component={Repos}/>
       {/* add the new route */}
       <Route path="/repos/:userName/:repoName" component={Repo}/>
