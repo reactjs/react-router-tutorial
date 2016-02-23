@@ -26,6 +26,12 @@ index route is rendered.
 First lets use the `IndexLink`
 
 ```js
+// in App.js
+// new imports
+// add `IndexLink` to 'react-router' imports
+import { IndexLink } from 'react-router'
+
+// replace <li><NavLink to="/">Home</NavLink></li> with
 <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
 ```
 
@@ -55,4 +61,3 @@ a `NavLink` and it will make its way down to the `Link`:
 ---
 
 [Next: Clean URLs](10-clean-urls.md)
-
