@@ -1,20 +1,9 @@
-import React from 'react'
-import { render } from 'react-dom'
-import App from './modules/App'
-import About from './modules/About'
-import Repo from './modules/Repo'
-import Repos from './modules/Repos'
-import Home from './modules/Home'
-import { Router, IndexRoute, Route, hashHistory } from 'react-router'
-
-
-render(
+var Router = window.ReactRouter.Router;
+var Route = window.ReactRouter.Route;
+var hashHistory = window.ReactRouter.hashHistory;
+ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="/repos" component={Repos} />
-      <Route path="/repos/:userName/:repoName" component={Repo} />
-      <Route path="/about" component={About} />
     </Route>
   </Router>, document.getElementById('app')
-  );
+);

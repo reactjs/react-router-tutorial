@@ -1,7 +1,3 @@
-import React from 'react'
-import { Link } from 'react-router'
-import NavLink from './NavLink'
-
 var App = (props) => (
   <div>
     <h1>React Router Tutorial</h1>
@@ -12,4 +8,5 @@ var App = (props) => (
     {props.children}
   </div>
 )
-export default App
+
+window.App = App;

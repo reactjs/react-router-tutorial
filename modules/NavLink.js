@@ -1,8 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router'
+var Link = window.ReactRouter.Link;
 
 var NavLink = (props) => (
   <Link {...props} activeClassName="active"/>
 )
 
-export default NavLink
+window.NavLink = NavLink;
