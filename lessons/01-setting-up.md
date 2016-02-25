@@ -9,9 +9,10 @@ up our project.
 ## Clone the Tutorial
 
 ```
-git clone <tutorial url>
+git clone https://github.com/reactjs/react-router-tutorial
 cd react-router-tutorial
 git checkout start
+npm install
 npm start
 ```
 
