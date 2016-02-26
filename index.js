@@ -7,7 +7,6 @@ import Repos from './modules/Repos'
 import Home from './modules/Home'
 import { Router, IndexRoute, Route, hashHistory } from 'react-router'
 
-
 render(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
