@@ -4,4 +4,4 @@ var NavLink = (props) => (
   <Link {...props} activeClassName="active"/>
 )
 
-window.NavLink = NavLink;
+export default NavLink

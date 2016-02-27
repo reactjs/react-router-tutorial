@@ -1,3 +1,6 @@
+
+import NavLink from './NavLink'
+
 var App = (props) => (
   <div>
     <h1>React Router Tutorial</h1>
@@ -9,4 +12,4 @@ var App = (props) => (
   </div>
 )
 
-window.App = App;
+export default App
