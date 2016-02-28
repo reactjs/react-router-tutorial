@@ -183,6 +183,8 @@ app.listen(PORT, function() {
 })
 ```
 
+Now delete `public/index.html` to use the server rendered version instead.
+
 And that's it. Now if you run `NODE_ENV=production npm start` and visit
 the app, you can view source and see that the server is sending down our
 app to the browser. As you click around, you'll notice the client app
