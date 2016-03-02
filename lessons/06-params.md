@@ -3,7 +3,7 @@
 Consider the following urls:
 
 ```
-/repos/rackt/react-router
+/repos/reactjs/react-router
 /repos/facebook/react
 ```
 
