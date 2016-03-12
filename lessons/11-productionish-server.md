@@ -35,6 +35,7 @@ Now we're ready to create a production server with Express. Here's a
 first attempt:
 
 ```js
+//server.js
 var express = require('express')
 var path = require('path')
 var compression = require('compression')
