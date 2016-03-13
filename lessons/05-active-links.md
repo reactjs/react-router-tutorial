@@ -14,7 +14,7 @@ Let's see how it looks with inline styles, add `activeStyle` to your
 <li><Link to="/repos" activeStyle={{ color: 'red' }}>Repos</Link></li>
 ```
 
-How as you navigate, the active link is red.
+Now as you navigate, the active link is red.
 
 ## Active Class Name
 
@@ -30,12 +30,14 @@ points if you can add a `link` tag from memory. Double extra points if
 you can leave the attributes unquoted, against your better judgement.
 
 ```html
+<!-- index.html -->
 <link rel=stylesheet href=index.css />
 ```
 
 And the css file:
 
 ```css
+/* index.css */
 .active {
   color: green;
 }
