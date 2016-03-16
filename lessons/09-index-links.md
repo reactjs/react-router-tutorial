@@ -26,7 +26,11 @@ index route is rendered.
 First lets use the `IndexLink`
 
 ```js
+import {IndexLink} from 'react-router'
+
+//...
 <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
+//...
 ```
 
 Fixed! Now this link is only "active" when we're at the index route. Go
