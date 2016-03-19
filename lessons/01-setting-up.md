@@ -12,10 +12,11 @@ up our project.
 git clone <tutorial url>
 cd react-router-tutorial
 git checkout start
+npm install
 npm start
 ```
 
-Now open up http://localhost:8080
+Now open up [http://localhost:8080](http://localhost:8080)
 
 Feel free to poke around the code to see how we're using webpack and npm
 scripts to run the app.
