@@ -35,7 +35,7 @@ a route like `About` and `Repos` in the future. A few reasons include:
 1. Participating in a data fetching abstraction that relies on matched
    routes and their components.
 2. Participating in `onEnter` hooks
-3. Participating in code-spliting
+3. Participating in code-splitting
 
 Also, it just feels good to keep `App` decoupled from `Home` and let the
 route config decide what to render as the children. Remember, we want to
