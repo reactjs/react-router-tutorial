@@ -26,6 +26,11 @@ index route is rendered.
 First lets use the `IndexLink`
 
 ```js
+// App.js
+// imports: add `Link,IndexLink` to imports
+import {Link,IndexLink} from 'react-router'
+
+
 <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
 ```
 
