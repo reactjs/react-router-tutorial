@@ -62,7 +62,7 @@ NODE_ENV=production npm start
 ```
 
 Congratulations! You now have a production server for this app. After
-clicking around, try navigating to `http://localhost:8080/package.json`.
+clicking around, try navigating to [http://localhost:8080/package.json](http://localhost:8080/package.json).
 Whoops.  Let's fix that. We're going to shuffle around a couple files and
 update some paths scattered across the app.
 
