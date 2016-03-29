@@ -47,7 +47,7 @@ Now open up `index.js` and add the new route.
 import Repo from './modules/Repo'
 
 render((
-  <Router>
+  <Router history={hashHistory}>
     <Route path="/" component={App}>
       <Route path="/repos" component={Repos}/>
       {/* add the new route */}
