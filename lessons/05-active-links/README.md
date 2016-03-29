@@ -14,7 +14,7 @@ Let's see how it looks with inline styles, add `activeStyle` to your
 <li><Link to="/repos" activeStyle={{ color: 'red' }}>Repos</Link></li>
 ```
 
-How as you navigate, the active link is red.
+Now as you navigate, the active link is red.
 
 ## Active Class Name
 
