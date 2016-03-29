@@ -31,10 +31,11 @@ Now when we run `npm start` it will check if our `NODE_ENV` is
 production. If it is, we run `npm run start:prod`, if it's not, we run
 `npm run start:dev`.
 
-Now we're ready to create a production server with Express. Here's a
+Now we're ready to create a production server with Express and add a new file at root dir. Here's a
 first attempt:
 
 ```js
+// server.js
 var express = require('express')
 var path = require('path')
 var compression = require('compression')
