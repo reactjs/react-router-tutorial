@@ -69,7 +69,7 @@ render((
 ), document.getElementById('app'))
 ```
 
-Now open http://localhost:8080 and you'll see the new component is
+Now open [http://localhost:8080](http://localhost:8080) and you'll see the new component is
 rendered.
 
 Notice how the `IndexRoute` has no path. It becomes
