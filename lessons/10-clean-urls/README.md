@@ -20,7 +20,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 render((
   <Router history={browserHistory}>
     {/* ... */}
-  <Router>
+  </Router>
 ), document.getElementById('app'))
 ```
 
