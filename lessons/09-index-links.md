@@ -48,7 +48,7 @@ We can use `Link` as well by passing it the `onlyActiveOnIndex` prop
 That's fine, but we already abstracted away having to know what the
 `activeClassName` is with `Nav`.
 
-Remember, in `Nav` we're passing along all of our props to `Link` with
+Remember, in `NavLink` we're passing along all of our props to `Link` with
 the `{...spread}` syntax, so we can actually add the prop when we render
 a `NavLink` and it will make its way down to the `Link`:
 
