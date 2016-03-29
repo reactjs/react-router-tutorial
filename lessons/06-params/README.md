@@ -10,7 +10,7 @@ Consider the following urls:
 These urls would match a route path like this:
 
 ```
-/repos/:userName/:repositoryName
+/repos/:userName/:repoName
 ```
 
 The parts that start with `:` are url parameters whose values will be
