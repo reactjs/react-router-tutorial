@@ -47,7 +47,7 @@ our `index.html`.
 ## Nav Link Wrappers
 
 Most links in your site don't need to know they are active, usually just
-primary navigation links need to know. Its useful to wrap those so you
+primary navigation links need to know. It's useful to wrap those so you
 don't have to remember what your `activeClassName` or `activeStyle` is
 everywhere.
 
