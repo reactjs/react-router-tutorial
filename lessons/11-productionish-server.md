@@ -61,6 +61,8 @@ Now run:
 ```
 NODE_ENV=production npm start
 ```
+// For windows users:
+// SET NODE_ENV=production npm start
 
 Congratulations! You now have a production server for this app. After
 clicking around, try navigating to `http://localhost:8080/package.json`.
@@ -157,4 +159,3 @@ the assets are being served with gzip compression.
 ---
 
 [Next: Navigating](12-navigating.md)
-
