@@ -25,7 +25,7 @@ render((
 ```
 
 Make sure your server is running with `npm start` and then visit
-http://localhost:8080
+[http://localhost:8080](http://localhost:8080)
 
 You should get the same screen as before, but this time with some junk
 in the URL. We're using `hashHistory`--it manages the routing history
@@ -79,8 +79,8 @@ render((
 ), document.getElementById('app'))
 ```
 
-Now visit http://localhost:8080/#/about and
-http://localhost:8080/#/repos
+Now visit [http://localhost:8080/#/about](http://localhost:8080/#/about) and
+[http://localhost:8080/#/repos](http://localhost:8080/#/repos)
 
 ---
 
