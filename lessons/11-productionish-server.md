@@ -12,7 +12,7 @@ depending on the environment.
 Let's install a couple modules:
 
 ```
-npm install if-env compression --save
+npm install express if-env compression --save
 ```
 
 First, we'll use the handy `if-env` in `package.json`.  Update your
