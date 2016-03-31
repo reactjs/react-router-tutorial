@@ -20,6 +20,7 @@ render `Home`:
 
 ```js
 // App.js
+import Home from './Home'
 
 // ...
 <div>
