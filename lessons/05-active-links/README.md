@@ -48,8 +48,7 @@ our `index.html`.
 
 Most links in your site don't need to know they are active, usually just
 primary navigation links need to know. It's useful to wrap those so you
-don't have to remember what your `activeClassName` or `activeStyle` is
-everywhere. 
+don't have to remember what your `activeClassName` or `activeStyle` is everywhere. 
 
 We will use an spread attribute here, the three dots. It clones our props 
 and in this use case it clones `activeClassName` to our desired component for 
