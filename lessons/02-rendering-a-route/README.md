@@ -1,4 +1,4 @@
-# Rendering a Router
+# Rendering a Route
 
 At its heart, React Router is a component.
 
