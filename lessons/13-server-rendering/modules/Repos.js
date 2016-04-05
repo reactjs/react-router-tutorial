@@ -10,7 +10,7 @@ export default React.createClass({
     event.preventDefault()
     const userName = event.target.elements[0].value
     const repo = event.target.elements[1].value
-    const path = `/repos/${userName}/${repo}`
+    const path = '/repos/${userName}/${repo}'
     this.context.router.push(path)
   },
 
