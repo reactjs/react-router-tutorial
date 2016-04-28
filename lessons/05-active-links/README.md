@@ -26,11 +26,10 @@ You can also use an active class name instead of inline-styles.
 ```
 
 We don't have a stylesheet on the page yet though. Lets add one--extra
-points if you can add a `link` tag from memory. Double extra points if
-you can leave the attributes unquoted, against your better judgement.
+points if you can add a `link` tag from memory.
 
 ```html
-<link rel=stylesheet href=index.css />
+<link rel="stylesheet" href="index.css" />
 ```
 
 And the css file:
