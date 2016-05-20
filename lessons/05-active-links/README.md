@@ -25,8 +25,8 @@ You can also use an active class name instead of inline-styles.
 <li><Link to="/repos" activeClassName="active">Repos</Link></li>
 ```
 
-We don't have a stylesheet on the page yet though. Lets add one--extra
-points if you can add a `link` tag from memory.
+We don't have a stylesheet on the page yet though. Lets add one-extra
+point if you can add a `link` tag from memory.
 
 ```html
 <link rel="stylesheet" href="index.css" />

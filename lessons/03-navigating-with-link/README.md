@@ -4,7 +4,7 @@ Perhaps the most used component in your app is `Link`. Its almost
 identical to the `<a/>` tag you're used to except that its aware of
 the `Router` it was rendered in.
 
-Lets create some navigation in our `App` component.
+Let's create some navigation in our `App` component.
 
 ```js
 // modules/App.js

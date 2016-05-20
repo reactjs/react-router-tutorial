@@ -6,7 +6,7 @@ At its heart, React Router is a component.
 render(<Router/>, document.getElementById('app'))
 ```
 
-That's not going display anything until we configure a route.
+That's not going to display anything until we configure a route.
 
 Open up `index.js` and
 
