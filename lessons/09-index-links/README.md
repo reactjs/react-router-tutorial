@@ -27,7 +27,7 @@ First lets use the `IndexLink`
 
 ```js
 // App.js
-import { IndexLink, Link } from 'react-router'
+import { IndexLink } from 'react-router'
 
 // ...
 <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
