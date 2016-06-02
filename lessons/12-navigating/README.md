@@ -1,10 +1,10 @@
 # Navigating Programatically
 
-While most navigation happens with `Link`, you can programatically
+While most navigation happens with `Link`, you can programmatically
 navigate around an application in response to form submissions, button
 clicks, etc.
 
-Let's make a little form in `Repos` that programatically navigates.
+Let's make a little form in `Repos` that programmatically navigates.
 
 ```js
 // modules/Repos.js

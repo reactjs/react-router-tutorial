@@ -88,7 +88,7 @@ app.get('*', function (req, res) {
 })
 ```
 
-We also need to tell wepback to build to this new directory:
+We also need to tell webpack to build to this new directory:
 
 ```js
 // webpack.config.js
