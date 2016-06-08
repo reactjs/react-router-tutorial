@@ -6,6 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server --inline --content-base ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msuzoagu/react-router-tutorial.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
