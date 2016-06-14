@@ -42,7 +42,7 @@ Also, it just feels good to keep `App` decoupled from `Home` and let the
 route config decide what to render as the children. Remember, we want to
 build small apps inside small apps, not big ones!
 
-Lets add a new route to `index.js`.
+Let's add a new route to `index.js`.
 
 ```js
 // index.js
