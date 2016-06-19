@@ -52,7 +52,7 @@ First we can use the `browserHistory` singleton that we passed into
 `Router` in `index.js` and push a new url into the history.
 
 ```js
-// Repos.js
+// modules/Repos.js
 import { browserHistory } from 'react-router'
 
 // ...

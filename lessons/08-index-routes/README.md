@@ -19,7 +19,7 @@ One option is to see if we have any children in `App`, and if not,
 render `Home`:
 
 ```js
-// App.js
+// modules/App.js
 import Home from './Home'
 
 // ...

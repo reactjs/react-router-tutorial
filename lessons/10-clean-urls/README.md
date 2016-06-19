@@ -53,7 +53,7 @@ starts at a deep path, won't be able to find the files.
 ```html
 <!-- index.html -->
 <!-- index.css -> /index.css -->
-<link rel=stylesheet href=/index.css>
+<link rel="stylesheet" href="/index.css">
 
 <!-- bundle.js -> /bundle.js -->
 <script src="/bundle.js"></script>
