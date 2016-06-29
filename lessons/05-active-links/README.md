@@ -21,6 +21,7 @@ Now as you navigate, the active link is red.
 You can also use an active class name instead of inline-styles.
 
 ```js
+// modules/App.js
 <li><Link to="/about" activeClassName="active">About</Link></li>
 <li><Link to="/repos" activeClassName="active">Repos</Link></li>
 ```
@@ -29,6 +30,7 @@ We don't have a stylesheet on the page yet though. Lets add one-extra
 point if you can add a `link` tag from memory.
 
 ```html
+// index.html
 <link rel="stylesheet" href="index.css" />
 ```
 
@@ -71,7 +73,7 @@ export default React.createClass({
 Now you can go change your links to `NavLink`s.
 
 ```js
-// App.js
+// modules/App.js
 import NavLink from './NavLink'
 
 // ...

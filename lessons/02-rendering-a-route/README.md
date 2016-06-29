@@ -66,6 +66,7 @@ export default React.createClass({
 Now we can couple them to the app at their respective paths.
 
 ```js
+// insert into index.js
 import About from './modules/About'
 import Repos from './modules/Repos'
 
