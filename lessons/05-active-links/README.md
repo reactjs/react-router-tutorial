@@ -6,7 +6,7 @@ it links to is active so you can style it differently.
 ## Active Styles
 
 Let's see how it looks with inline styles, add `activeStyle` to your
-`Links`s.
+`Link`s.
 
 ```js
 // modules/App.js
@@ -52,7 +52,7 @@ primary navigation links need to know. It's useful to wrap those so you
 don't have to remember what your `activeClassName` or `activeStyle` is
 everywhere.
 
-We will use a spread operator here, the three dots. It clones our props 
+We will use a spread operator here, the three dots. It clones our props
 and in this use case it clones `activeClassName` to our desired component for
 us to benefit from.
 
