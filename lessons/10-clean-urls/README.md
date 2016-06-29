@@ -1,6 +1,6 @@
 # Clean URLs with Browser History
 
-The URLs in our app right now are built on a hack: the hash. Its the
+The URLs in our app right now are built on a hack: the hash. It's the
 default because it will always work, but there's a better way.
 
 Modern browsers let JavaScript manipulate the URL without making an http
