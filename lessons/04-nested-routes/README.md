@@ -46,7 +46,7 @@ automatically becomes nested UI.
 
 ## Sharing Our Navigation
 
-Lets nest our `About` and `Repos` components inside of `App` so that we
+Let's nest our `About` and `Repos` components inside of `App` so that we
 can share the navigation with all screens in the app. We do it in two
 steps:
 
@@ -75,7 +75,7 @@ Next, render children inside of `App`.
   render() {
     return (
       <div>
-        <h1>Ghettohub Issues</h1>
+        <h1>React Router Tutorial</h1>
         <ul role="nav">
           <li><Link to="/about">About</Link></li>
           <li><Link to="/repos">Repos</Link></li>
