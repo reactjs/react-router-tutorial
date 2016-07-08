@@ -1,19 +1,19 @@
 # URL Params
 
-Consider the following urls:
+Consider the following URLs:
 
 ```
 /repos/reactjs/react-router
 /repos/facebook/react
 ```
 
-These urls would match a route path like this:
+These URLs would match a route path like this:
 
 ```
 /repos/:userName/:repoName
 ```
 
-The parts that start with `:` are url parameters whose values will be
+The parts that start with `:` are URL parameters whose values will be
 parsed out and made available to route components on
 `this.props.params[name]`.
 
