@@ -27,8 +27,8 @@ scripts entry in package.json to look like this:
 },
 ```
 
-Now when we run `npm start` it will check if our `NODE_ENV` is
-production. If it is, we run `npm run start:prod`, if it's not, we run
+When you run `npm start` it checks if the value of our `NODE_ENV` environment variable is
+`production`. If yes, it runs `npm run start:prod`, if not, it runs
 `npm run start:dev`.
 
 Now we're ready to create a production server with Express and add a new file at root dir. Here's a
