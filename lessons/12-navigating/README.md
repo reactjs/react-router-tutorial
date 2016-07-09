@@ -49,7 +49,7 @@ There are two ways you can do this, the first is simpler than the
 second.
 
 First we can use the `browserHistory` singleton that we passed into
-`Router` in `index.js` and push a new url into the history.
+`Router` in `index.js` and push a new URL into the history.
 
 ```js
 // modules/Repos.js
