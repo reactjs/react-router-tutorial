@@ -23,7 +23,7 @@ index route is rendered.
 
 ## IndexLink
 
-First lets use the `IndexLink`
+First let's use the `IndexLink` instead of `NavLink`
 
 ```js
 // App.js
