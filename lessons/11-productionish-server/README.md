@@ -61,7 +61,7 @@ Now run:
 ```sh
 NODE_ENV=production npm start
 # For Windows users:
-# SET NODE_ENV=production npm start
+# SET "NODE_ENV=production" && npm start
 ```
 
 Congratulations! You now have a production server for this app. After
