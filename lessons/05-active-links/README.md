@@ -34,7 +34,7 @@ point if you can add a `link` tag from memory.
 <link rel="stylesheet" href="index.css" />
 ```
 
-And the css file:
+And the CSS file:
 
 ```css
 .active {
