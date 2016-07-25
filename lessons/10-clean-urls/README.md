@@ -24,7 +24,7 @@ render((
 ), document.getElementById('app'))
 ```
 
-Now go click around and admire your clean urls.
+Now go click around and admire your clean URLs.
 
 Oh yeah, the catch. Click on a link and then refresh your browser. What
 happens?
@@ -35,8 +35,8 @@ Cannot GET /repos
 
 ## Configuring Your Server
 
-Your server needs to deliver your app no matter what url comes in,
-because your app, in the browser, is manipulating the url. Our current
+Your server needs to deliver your app no matter what URL comes in,
+because your app, in the browser, is manipulating the URL. Our current
 server doesn't know how to handle the URL.
 
 The Webpack Dev Server has an option to enable this. Open up
@@ -47,7 +47,7 @@ The Webpack Dev Server has an option to enable this. Open up
 ```
 
 We also need to change our relative paths to absolute paths in
-`index.html` since the urls will be at deep paths and the app, if it
+`index.html` since the URLs will be at deep paths and the app, if it
 starts at a deep path, won't be able to find the files.
 
 ```html
@@ -60,7 +60,7 @@ starts at a deep path, won't be able to find the files.
 ```
 
 Stop your server if it's running, then `npm start` again. Look at those
-clean urls :)
+clean URLs :)
 
 ---
 
