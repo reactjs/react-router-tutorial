@@ -1,7 +1,7 @@
 # Navigating with Link
 
-Perhaps the most used component in your app is `Link`. Its almost
-identical to the `<a/>` tag you're used to except that its aware of
+Perhaps the most used component in your app is `Link`. It's almost
+identical to the `<a/>` tag you're used to except that it's aware of
 the `Router` it was rendered in.
 
 Let's create some navigation in our `App` component.
