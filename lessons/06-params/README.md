@@ -19,7 +19,7 @@ parsed out and made available to route components on
 
 ## Adding a Route with Parameters
 
-Lets teach our app how to render screens at `/repos/:userName/:repoName`.
+Let's teach our app how to render screens at `/repos/:userName/:repoName`.
 
 First we need a component to render at the route, make a new file at
 `modules/Repo.js` that looks something like this:
