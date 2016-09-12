@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default React.createClass({
+export default class Repos extends React.Component {
   render() {
     return <div>Repos</div>
   }
-})
+}
