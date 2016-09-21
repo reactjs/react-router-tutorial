@@ -27,6 +27,16 @@ scripts entry in package.json to look like this:
 },
 ```
 
+In the root directly, go open up `webpack.config.js` and add the publicPath '/' as per below:
+```
+// webpack.config.js
+  output: {
+    path: 'public',
+    filename: 'bundle.js',
+    publicPath: '/'
+  },
+```
+
 When you run `npm start` it checks if the value of our `NODE_ENV` environment variable is
 `production`. If yes, it runs `npm run start:prod`, if not, it runs
 `npm run start:dev`.
