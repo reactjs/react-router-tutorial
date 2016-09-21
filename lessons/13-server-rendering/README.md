@@ -152,7 +152,7 @@ import routes from './modules/routes'
 app.get('*', (req, res) => {
   // match the routes to the url
   match({ routes: routes, location: req.url }, (err, redirect, props) => {
-    // `RouterContext` is the what `Router` renders. `Router` keeps these
+    // `RouterContext` is what the `Router` renders. `Router` keeps these
     // `props` in its state as it listens to `browserHistory`. But on the
     // server our app is stateless, so we need to use `match` to
     // get these props before rendering.
