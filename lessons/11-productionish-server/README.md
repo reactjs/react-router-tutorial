@@ -27,7 +27,7 @@ scripts entry in package.json to look like this:
 },
 ```
 
-In the root directly, go open up `webpack.config.js` and add the publicPath '/' as per below:
+In the root directory, go open up `webpack.config.js` and add the publicPath '/' as per below:
 ```
 // webpack.config.js
   output: {
