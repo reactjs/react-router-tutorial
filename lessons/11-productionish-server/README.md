@@ -37,6 +37,13 @@ In the root directly, go open up `webpack.config.js` and add the publicPath '/' 
   },
 ```
 
+Now you will need to change the html since you changed the path to the output folder of the
+bundle.js above. Go to index.html and change '/bundle.js' to '/public/bundle.js' as per below:
+```
+<!-- index.html bundle location change -->
+<script src="/public/bundle.js"></script>
+```
+
 When you run `npm start` it checks if the value of our `NODE_ENV` environment variable is
 `production`. If yes, it runs `npm run start:prod`, if not, it runs
 `npm run start:dev`.
