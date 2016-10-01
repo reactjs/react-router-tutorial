@@ -35,7 +35,7 @@ scripts entry in package.json to look like this:
 ```
 When you run `npm start` it checks if the value of our `NODE_ENV` environment variable is
 `production`. If yes, it runs `npm run start:prod`, if not, it runs
-`npm run start:dev`. We have also added that the content-base of `start:dev` is a folder called public that we have just created.
+`npm run start:dev`. We have also added that the content-base of `start:dev` is the `public` directory that we just created.
 
 In the root directly, open up `webpack.config.js` and add the publicPath '/' as per below:
 ```
