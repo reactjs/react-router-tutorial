@@ -9,13 +9,20 @@ Webpack dev server is not a production server. Let's make a production
 server and a little environment-aware script to boot up the right server
 depending on the environment.
 
+Firstly, we will need to move a few files around. When in production, we don't want the user to be able to navigate around our root folder and see files such as `package.json`. To combat this, we will create a new public folder and serve everything we want the user to be able to access from there.
+
+1. make a `public` directory.
+2. Move `index.html` and `index.css` into it.
+
+We now have to change a few things to work with this new `public` directory.
+
 Let's install a couple modules:
 
 ```
 npm install express if-env compression --save
 ```
 
-First, we'll use the handy `if-env` in `package.json`.  Update your
+We'll make use of the handy `if-env` in `package.json`.  Update your
 scripts entry in package.json to look like this:
 
 ```json
@@ -28,10 +35,9 @@ scripts entry in package.json to look like this:
 ```
 When you run `npm start` it checks if the value of our `NODE_ENV` environment variable is
 `production`. If yes, it runs `npm run start:prod`, if not, it runs
-`npm run start:dev`. We have also added that the content-base of `start:dev` is a folder called
-public that we will create soon.
+`npm run start:dev`. We have also added that the content-base of `start:dev` is a folder called public that we have just created.
 
-In the root directly, go open up `webpack.config.js` and add the publicPath '/' as per below:
+In the root directly, open up `webpack.config.js` and add the publicPath '/' as per below:
 ```
 // webpack.config.js
   output: {
@@ -41,11 +47,7 @@ In the root directly, go open up `webpack.config.js` and add the publicPath '/' 
   },
 ```
 We have now said a public folder will be the destination folder
-of the `bundle.js` file, because of this, we'll need to reorganise our files a little,
-namely:
-
-1. make a `public` directory.
-2. Move `index.html` and `index.css` into it.
+of the `bundle.js` file.
 
 Now we're ready to create a production server with Express! Start by adding a new file at root dir called `server.js`:
 
@@ -70,13 +72,7 @@ app.listen(PORT, function() {
 })
 ```
 
-And finally (!) add it to the `--content-base` argument to `npm run start:dev` script:
-
-```json
-"start:dev": "webpack-dev-server --inline --content-base public --history-api-fallback",
-```
-
-Now run:
+Simple enough, now run:
 
 ```sh
 NODE_ENV=production npm start
