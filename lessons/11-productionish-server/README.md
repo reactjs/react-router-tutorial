@@ -22,13 +22,14 @@ scripts entry in package.json to look like this:
 // package.json
 "scripts": {
   "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-  "start:dev": "webpack-dev-server --inline --content-base . --history-api-fallback",
+  "start:dev": "webpack-dev-server --inline --content-base public --history-api-fallback",
   "start:prod": "webpack && node server.js"
 },
 ```
 When you run `npm start` it checks if the value of our `NODE_ENV` environment variable is
 `production`. If yes, it runs `npm run start:prod`, if not, it runs
-`npm run start:dev`.
+`npm run start:dev`. We have also added that the content-base of `start:dev` is a folder called
+public that we will create soon.
 
 In the root directly, go open up `webpack.config.js` and add the publicPath '/' as per below:
 ```
@@ -39,15 +40,14 @@ In the root directly, go open up `webpack.config.js` and add the publicPath '/' 
     publicPath: '/'
   },
 ```
-Note that now we have designated a public folder will be the destination folder
+We have now said a public folder will be the destination folder
 of the `bundle.js` file, because of this, we'll need to reorganise our files a little,
 namely:
 
 1. make a `public` directory.
 2. Move `index.html` and `index.css` into it.
 
-Now we're ready to create a production server with Express and add a new file at root dir. Here's a
-first attempt:
+Now we're ready to create a production server with Express! Start by adding a new file at root dir called `server.js`:
 
 ```js
 // server.js
@@ -59,7 +59,7 @@ var app = express()
 // serve our static stuff from the public directory
 app.use(express.static(path.join(__dirname, 'public')))
 
-// send all requests to index.html so browserHistory in React Router works
+// send all requests to public/index.html so browserHistory in React Router works
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
