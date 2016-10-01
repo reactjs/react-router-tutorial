@@ -26,6 +26,9 @@ scripts entry in package.json to look like this:
   "start:prod": "webpack && node server.js"
 },
 ```
+When you run `npm start` it checks if the value of our `NODE_ENV` environment variable is
+`production`. If yes, it runs `npm run start:prod`, if not, it runs
+`npm run start:dev`.
 
 In the root directly, go open up `webpack.config.js` and add the publicPath '/' as per below:
 ```
@@ -36,10 +39,12 @@ In the root directly, go open up `webpack.config.js` and add the publicPath '/' 
     publicPath: '/'
   },
 ```
+Note that now we have designated a public folder will be the destination folder
+of the `bundle.js` file, because of this, we'll need to reorganise our files a little,
+namely:
 
-When you run `npm start` it checks if the value of our `NODE_ENV` environment variable is
-`production`. If yes, it runs `npm run start:prod`, if not, it runs
-`npm run start:dev`.
+1. make a `public` directory.
+2. Move `index.html` and `index.css` into it.
 
 Now we're ready to create a production server with Express and add a new file at root dir. Here's a
 first attempt:
@@ -78,10 +83,7 @@ clicking around, try navigating to [http://localhost:8080/package.json](http://l
 Whoops.  Let's fix that. We're going to shuffle around a couple files and
 update some paths scattered across the app.
 
-1. make a `public` directory.
-2. Move `index.html` and `index.css` into it.
-
-Now let's update `server.js` to point to the right directory for static
+Let's update `server.js` to point to the right directory for static
 assets:
 
 ```js
