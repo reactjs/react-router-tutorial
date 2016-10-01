@@ -49,7 +49,7 @@ In the root directly, open up `webpack.config.js` and add the publicPath '/' as 
 We have now said a public folder will be the destination folder
 of the `bundle.js` file.
 
-Now we're ready to create a production server with Express! Start by adding a new file at root dir called `server.js`:
+Now we're ready to create a production server with Express! Add a new file in the root dir called `server.js` with the following code:
 
 ```js
 // server.js
@@ -72,7 +72,7 @@ app.listen(PORT, function() {
 })
 ```
 
-Simple enough, now run:
+Now run:
 
 ```sh
 NODE_ENV=production npm start
@@ -80,7 +80,7 @@ NODE_ENV=production npm start
 # SET "NODE_ENV=production" && npm start
 ```
 
-Congratulations! You now have a production server for this app!
+Congratulations! You now have a basic production server for this app!
 
 If we had the time in this tutorial, we could use the `WebpackDevServer`
 API in a JavaScript file instead of the CLI in an npm script and then
