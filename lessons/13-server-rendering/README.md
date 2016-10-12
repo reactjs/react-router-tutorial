@@ -136,7 +136,7 @@ First we import `match` and `RouterContext` from react router, then
 we'll match the routes to the url, and finally render.
 
 ```js
-// ...
+// server.js
 // import some new stuff
 import React from 'react'
 // we'll use this to render our app to an html string
