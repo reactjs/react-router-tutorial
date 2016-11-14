@@ -43,7 +43,7 @@ The Webpack Dev Server has an option to enable this. Open up
 `package.json` and add `--history-api-fallback`.
 
 ```json
-    "start": "webpack-dev-server --inline --content-base . --history-api-fallback"
+    "start": "webpack-dev-server --inline --content-base --history-api-fallback"
 ```
 
 We also need to change our relative paths to absolute paths in
