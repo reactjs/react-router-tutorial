@@ -26,7 +26,7 @@ export default React.createClass({
 })
 ```
 
-Now visit [http://localhost:8080](http://localhost:8080) and click the links, click back, click
+Now visit [http://localhost:7531](http://localhost:7531) and click the links, click back, click
 forward. It works!
 
 ---
