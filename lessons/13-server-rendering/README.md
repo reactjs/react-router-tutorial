@@ -147,6 +147,10 @@ import routes from './modules/routes'
 
 // ...
 
+//Don't send index.html as a static file (let app.get('*',..) process it
+app.use(express.static(path.join(__dirname, 'public'), {index: false}))
+
+
 // send all requests to index.html so browserHistory works
 
 app.get('*', (req, res) => {
