@@ -1,10 +1,11 @@
 import React from 'react'
 import NavLink from './NavLink'
 
-export default React.createClass({
-  contextTypes: {
-    router: React.PropTypes.object
-  },
+export default class Repos extends React.Component {
+  constructor(props, context){
+    super(props)
+    context.router
+  }
 
   handleSubmit(event) {
     event.preventDefault()
@@ -12,7 +13,7 @@ export default React.createClass({
     const repo = event.target.elements[1].value
     const path = `/repos/${userName}/${repo}`
     this.context.router.push(path)
-  },
+  }
 
   render() {
     return (
@@ -33,4 +34,8 @@ export default React.createClass({
       </div>
     )
   }
-})
+}
+
+Repos.contextTypes = {
+    router: React.PropTypes.object
+}

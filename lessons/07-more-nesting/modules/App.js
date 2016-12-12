@@ -1,7 +1,7 @@
 import React from 'react'
 import NavLink from './NavLink'
 
-export default React.createClass({
+export default class App extends React.Component {
   render() {
     return (
       <div>
@@ -14,4 +14,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}

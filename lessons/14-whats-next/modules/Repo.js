@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default React.createClass({
+export default class Repo extends React.Component{
   render() {
     const { userName, repoName } = this.props.params
     return (
@@ -9,4 +9,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}
