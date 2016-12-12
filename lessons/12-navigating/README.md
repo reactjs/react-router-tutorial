@@ -4,6 +4,24 @@ While most navigation happens with `Link`, you can programmatically
 navigate around an application in response to form submissions, button
 clicks, etc.
 
+Before all, make sure you've got the params we need to render in `Repo.js` 
+```js
+// modules/Repo.js
+import React from 'react'
+
+export default React.createClass({
+  render() {
+    {/* get the params  */}
+    const { userName, repoName } = this.props.params
+    return (
+      <div>
+        <h2>{userName} / {repoName}</h2>
+      </div>
+    )
+  }
+})
+```
+
 Let's make a little form in `Repos` that programmatically navigates.
 
 ```js
