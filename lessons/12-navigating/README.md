@@ -32,7 +32,7 @@ export default React.createClass({
           {/* add this form */}
           <li>
             <form onSubmit={this.handleSubmit}>
-              <input type="text" placeholder="userName"/> / {' '}
+              <input type="text" placeholder="userName"/>{' / '}
               <input type="text" placeholder="repo"/>{' '}
               <button type="submit">Go</button>
             </form>
