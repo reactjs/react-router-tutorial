@@ -58,7 +58,7 @@ render((
 ), document.getElementById('app'))
 ```
 
-Now we can add some links to this new route in `Repos.js`.
+Now we can add some links to this new route in `App.js`.
 
 ```js
 // Repos.js
