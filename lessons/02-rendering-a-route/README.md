@@ -8,6 +8,13 @@ render(<Router/>, document.getElementById('app'))
 
 That's not going to display anything until we configure a route.
 
+To Start:
+
+```
+$ cd 02-rendering-a-route
+$ npm install
+```
+
 Open up `index.js` and
 
 1. import `Router`, `Route`, and `hashHistory`
