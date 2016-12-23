@@ -30,4 +30,4 @@ Open up `modules/App.js` and change the text to something like "Hello
 
 ---
 
-[Next: Rendering a Router](../02-rendering-a-route/)
+[Next: Rendering a Route](../02-rendering-a-route/)
