@@ -10,7 +10,7 @@ That's not going to display anything until we configure a route.
 
 Open up `index.js` and
 
-1. import `Router`, `Route`, and `hashHistory`
+1. import `Router`, `Route`, and `browserHistory`
 2. render a `Router` instead of `App`
 
 ```js
@@ -18,7 +18,7 @@ Open up `index.js` and
 import { Router, Route, hashHistory } from 'react-router'
 
 render((
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={App}/>
   </Router>
 ), document.getElementById('app'))
@@ -71,7 +71,7 @@ import About from './modules/About'
 import Repos from './modules/Repos'
 
 render((
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={App}/>
     {/* add the routes here */}
     <Route path="/repos" component={Repos}/>
