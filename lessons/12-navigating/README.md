@@ -70,31 +70,35 @@ common to use anything other than `browserHistory`, so this is
 acceptable practice. If you're concerned about it, you can make a module
 that exports the history you want to use across the app, or...
 
-You can also use the `router` that `Router` provides on "context".
-First, you ask for context in the component, and then you can use it:
+You can also access the router by wrapping your component with the 
+`withRouter` 
+[higher-order component](https://facebook.github.io/react/docs/higher-order-components.html),
+which will allow you to access the `Router` by passing it to your component in the `props`. 
+You can then access the router as `this.props.router`.
 
 ```js
-export default React.createClass({
+// modules/Repos.js
+import { withRouter } from 'react-router'
 
-  // ask for `router` from context
-  contextTypes: {
-    router: React.PropTypes.object
-  },
+var Repos = React.createClass({
 
   // ...
 
   handleSubmit(event) {
     // ...
-    this.context.router.push(path)
+    this.props.router.push(path)
   },
 
   // ..
 })
+
+var ReposWithRouter = withRouter(Repos);
+
+export default ReposWithRouter;
 ```
 
 This way you'll be sure to be pushing to whatever history gets passed to
-`Router`. It also makes testing a bit easier since you can more easily
-stub context than singletons.
+`Router`.
 
 ---
 
