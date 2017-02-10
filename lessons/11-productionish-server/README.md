@@ -31,7 +31,7 @@ In the root directly, go open up `webpack.config.js` and add the publicPath '/' 
 ```
 // webpack.config.js
   output: {
-    path: 'public',
+    path: '',
     filename: 'bundle.js',
     publicPath: '/'
   },
