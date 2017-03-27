@@ -31,7 +31,6 @@ In the root directly, go open up `webpack.config.js` and add the publicPath '/' 
 ```
 // webpack.config.js
   output: {
-    path: 'public',
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -78,7 +77,15 @@ clicking around, try navigating to [http://localhost:8080/package.json](http://l
 Whoops.  Let's fix that. We're going to shuffle around a couple files and
 update some paths scattered across the app.
 
-1. make a `public` directory.
+1. Make a `public` directory and update `webpack.config.js` again...
+    ```
+    //webpack.config.js
+    output: {
+        path: 'public',
+        filename: 'bundle.js',
+        publicPath: '/'
+    }
+    ```
 2. Move `index.html` and `index.css` into it.
 
 Now let's update `server.js` to point to the right directory for static
