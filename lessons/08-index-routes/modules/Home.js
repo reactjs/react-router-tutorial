@@ -2,6 +2,7 @@ import React from 'react'
 
 export default React.createClass({
   render() {
-    return <div>Hello, React Router! I'm comming</div>
+    return <div>Home</div>
+    {this.props.children || <Home />}
   }
 })
