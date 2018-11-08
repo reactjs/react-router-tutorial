@@ -15,7 +15,7 @@ These URLs would match a route path like this:
 
 The parts that start with `:` are URL parameters whose values will be
 parsed out and made available to route components on
-`this.props.params[name]`.
+`this.props.match.params[name]`.
 
 ## Adding a Route with Parameters
 
@@ -32,7 +32,7 @@ export default React.createClass({
   render() {
     return (
       <div>
-        <h2>{this.props.params.repoName}</h2>
+        <h2>{this.props.match.params.repoName}</h2>
       </div>
     )
   }
@@ -84,7 +84,7 @@ export default React.createClass({
 
 Now go test your links out. Note that the parameter name in the route
 `path` becomes the property name in the component. Both `repoName` and
-`userName` are available on `this.props.params` of your component. You
+`userName` are available on `this.props.match.params` of your component. You
 should probably add some prop types to help others and yourself out
 later.
 
